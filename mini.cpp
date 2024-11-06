@@ -11,7 +11,7 @@ int travellingSalesmanProblem(int graph[V][V], int starting_city ) {
     vector<int> vertices;
     for (int i = 0; i < V; i++) {
         if (i != starting_city ) {
-            cout<<i<<" ";
+            // cout<<i<<" ";
             vertices.push_back(i);
         }
     }
@@ -71,3 +71,10 @@ travellingSalesmanProblem(graph, starting_city) ;
 
     return 0;
 }
+// Distance: 95 | Path: 0-->1-->2-->3-->4-->
+// Distance: 80 | Path: 0-->1-->2-->3-->4-->
+// Distance: 95 | Path: 0-->1-->2-->3-->4-->
+// Distance: 80 | Path: 0-->1-->2-->3-->4-->
+// Distance: 95 | Path: 0-->1-->2-->3-->4-->
+// Distance: 95 | Path: 0-->1-->2-->3-->4-->
+// Best path is :[0 1 3 2 0 ] Minimum Distance: 80
